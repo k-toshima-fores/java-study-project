@@ -25,4 +25,13 @@ public class GreetingController {
     model.addAttribute("name", name);
     return "greeting/morning";
   }
+
+  @GetMapping("/index")
+  public String index(
+      @RequestParam(name = "name", required = false, defaultValue = "World") String name,
+      Model model) {
+    model.addAttribute("name", name);
+    return "greeting/index";
+  }
+
 }
