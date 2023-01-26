@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    oracle:
+      url: jdbc:oracle:thin:DBUSER/0000@//localhost:1521/orclpdb.localadmin
+      username: testuser01
+      password: root
+      driver-class-name: oracle.jdbc.OracleDriver
+      type: com.zaxxer.hikari.HikariDataSource
+    mysql:
+      url: jdbc:mysql://localhost:3306/mysql
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
